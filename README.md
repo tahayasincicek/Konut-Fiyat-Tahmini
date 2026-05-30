@@ -1,8 +1,8 @@
-# Konut Fiyat Tahmini (House Price Prediction) 🏡📊
+# Konut Fiyat Tahmini (House Price Prediction)
 
 Bu proje, çeşitli fiziksel ve konumsal özelliklerine göre konut fiyatlarını tahmin etmeyi amaçlayan kapsamlı bir makine öğrenmesi (Machine Learning) çalışmasıdır. Veri bilimi ve makine öğrenmesi süreçlerinin (veri ön işleme, keşifçi veri analizi, özellik seçimi, model eğitimi ve değerlendirme) adım adım uygulandığı bir yapıya sahiptir.
 
-## 📋 Veri Seti (Dataset)
+## Veri Seti (Dataset)
 
 Projede kullanılan veri seti (`Housing.csv`), bir evin fiyatını etkileyebilecek özellikleri içermektedir. Veri setinde yer alan özellikler şunlardır:
 
@@ -20,7 +20,7 @@ Projede kullanılan veri seti (`Housing.csv`), bir evin fiyatını etkileyebilec
 * **`prefarea`**: Tercih edilen bir bölgede olup olmadığı (Evet/Hayır)
 * **`furnishingstatus`**: Eşya durumu (Eşyalı, Yarı Eşyalı, Eşyasız)
 
-## 🛠️ Kullanılan Teknolojiler ve Kütüphaneler
+## Kullanılan Teknolojiler ve Kütüphaneler
 
 Projenin geliştirilmesinde Python programlama dili ve popüler veri bilimi kütüphaneleri kullanılmıştır:
 
@@ -30,7 +30,7 @@ Projenin geliştirilmesinde Python programlama dili ve popüler veri bilimi küt
 * **Gelişmiş Algoritmalar:** `xgboost`, `lightgbm`, `catboost`
 * **İstatistiksel Analizler:** `statsmodels`
 
-## 🧠 Uygulanan Makine Öğrenmesi Modelleri
+## Uygulanan Makine Öğrenmesi Modelleri
 
 Projeyle farklı model mimarileri denenerek en yüksek performanslı tahminleyici bulunmaya çalışılmıştır:
 
@@ -42,14 +42,14 @@ Projeyle farklı model mimarileri denenerek en yüksek performanslı tahminleyic
 * Gradyan Artırma Regresyonu (Gradient Boosting Regressor)
 * XGBoost, LightGBM ve CatBoost Regressor
 
-## 🚀 Proje İş Akışı
+## Proje İş Akışı
 
 1. **Veri Ön İşleme (Data Preprocessing):** Eksik veri kontrolü ve kategorik değişkenlerin makine öğrenmesi modellerinin anlayabileceği sayısal formata dönüştürülmesi (One-Hot Encoding). Değişkenlerin farklı ölçeklerde olmasından kaynaklanacak sapmaları önlemek için veri ölçeklendirme (MinMaxScaler/StandardScaler).
 2. **Keşifçi Veri Analizi (Exploratory Data Analysis - EDA):** Değişkenlerin dağılımlarının incelenmesi, aykırı değer analizi ve özelliklerin hedef değişken olan `price` ile korelasyonlarının görselleştirilmesi.
 3. **Özellik Seçimi (Feature Selection):** Gereksiz özellikleri eleyerek karmaşıklığı azaltmak ve model performansını artırmak amacıyla Varyans Şişme Faktörü (VIF) gibi istatistiksel tekniklerin kullanılması.
 4. **Model Eğitimi ve Değerlendirme:** Veri setinin Eğitim (Train) ve Test olarak ayrılması. Çeşitli algoritmaların eğitilmesi ve $R^2$ Score, MAE (Ortalama Mutlak Hata), MSE (Ortalama Kare Hata) gibi başarı metrikleriyle performanslarının kıyaslanması.
 
-## 💻 Kurulum ve Çalıştırma
+## Kurulum ve Çalıştırma
 
 Projeyi kendi ortamınızda incelemek ve çalıştırmak isterseniz aşağıdaki adımları takip edebilirsiniz:
 
